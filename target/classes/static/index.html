@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EternaQuest</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</head>
+<body>
+<div id="app">
+
+  <nav class="navbar hidden" id="navbar">
+    <span class="navbar-brand">EternaQuest</span>
+    <div class="navbar-nav" id="nav-buttons"></div>
+  </nav>
+
+  <main class="main-content" id="app-content"></main>
+
+  <div class="toast-container" id="toast-container"></div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/ws.js"></script>
+<script src="js/state.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => App.init());
+</script>
+</body>
+</html>
